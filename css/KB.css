@@ -7,7 +7,7 @@ body {
 
 body {
     font-family: 'Raleway', Merriweather,'Helvetica Neue',Arial,sans-serif;
-    background-color: #e7e7e7;
+    background-color: #c4efd9;
 }
 
 hr {
@@ -343,14 +343,11 @@ header .header-content .header-content-inner p {
 
 .problem-text {
     max-width: 250px;
+    padding-top: 20px;
 }
 
 
 /**** PROBLEM CAROUSEL *****/
-.container.sized {
-    max-width: 960px;
-}
-
 #problemCarousel {
     display: table;
     margin: 0 auto;
@@ -365,6 +362,7 @@ header .header-content .header-content-inner p {
     font-size: 0.1em;
     letter-spacing: 3em;
     border-color: #000;
+    visibility: hidden;
 }
 
 .carousel-indicators li {
@@ -398,7 +396,17 @@ span.glyphicon.custom:hover {
     color: #14c269;
 }
 
+.scaled-problem-carousel {
+    height: 200px;
+}
+
 /**** END PROBLEM CAROUSEL *****/
+
+
+.pad-sides {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
 /***** END PROBLEM **********/
 
@@ -420,4 +428,12 @@ br.text-break {
     display:block; 
     margin-top:40px; 
     line-height:40px; 
+}
+
+.color-primary {
+    background-color: #14c269;
+}
+
+.color-faded {
+    background-color: #efefef;
 }
