@@ -53,3 +53,4 @@
     /*$("header").css("background-image", "url(../img/bg_new_scaled.jpg)"); */
         
 })(jQuery); // End of use strict
+
