@@ -33,15 +33,15 @@
     
     
     //CUSTOM JS
-    document.querySelector("header").style.backgroundImage = 'url(./img/header/bg_new_scaled.jpg)';
+    document.querySelector("header").style.backgroundImage = "url(../img/header/bg_new_scaled.jpg)";
     
     var scroll_pos = 0;
     $(document).scroll(function() { 
         scroll_pos = $(this).scrollTop();
         if(scroll_pos > 75) {
-            $("#branding").css('background-image', 'url(./img/header/logo_black.png)');
+            $("#branding").css('background-image', 'url(../img/header/logo_black.png)');
         } else {
-            $("#branding").css('background-image', 'url(./img/header/logo_white.png)');
+            $("#branding").css('background-image', 'url(../img/header/logo_white.png)');
         }
     });
     
