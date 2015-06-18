@@ -1,41 +1,22 @@
-#banner-text {
-    padding-top: 18%;
-    font-size: 45px;
-    text-transform: none;
-    font-weight: 400;
-    line-height: 130%; 
-    margin-right: 0;
-    text-align: right;
-    padding-right: 50px;
-    
-}
-
-#banner-text-small {
-    font-size: 24px;
-    margin-right: 0;
-    text-align: right;
-    max-width: 90%;
-}
-
-.learn-more {
-    font-size: 24px;
-    padding-bottom: 15%;
-    font-weight: 700;
-    margin-right: 50px;
-    margin-top: 20px;
-}
-
-.btn-custom {
-    background: none;
-    padding: 12px 22px;
-    border: 2px solid #14c269;
-    color: #14c269;
-    border-radius: 2px;
-}
-
-.btn-custom:hover, .btn-custom:focus {
-    background-color: #14c269;
+.jumbotron {
+    position: relative;
+    width: 100%;
+    min-height: auto;
+    text-align: center;
     color: #fff;
-    border-radius: 2px;
-    text-decoration: none;
+    background-image: url(../img/header/black_bg.gif);
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    
+    transition: background 1.5s linear;
+    overflow: auto;
+    resize: both;
+}
+
+.container {
+    margin: 0 0;
+    padding: 0 0;
 }
