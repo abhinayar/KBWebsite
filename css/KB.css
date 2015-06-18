@@ -7,7 +7,7 @@ body {
 
 body {
     font-family: 'Raleway', Merriweather,'Helvetica Neue',Arial,sans-serif;
-    background-color: #c4efd9;
+    background-color: #fff;
 }
 
 hr {
@@ -65,7 +65,7 @@ p {
 }
 
 section {
-    padding: 50px 0;
+    padding: 40px 0;
 }
 
 aside {
@@ -73,7 +73,11 @@ aside {
 }
 
 .no-padding {
-    padding: 0;
+    padding: 0 0;
+}
+
+.no-margin {
+    margin: 0 0;
 }
 
 /******END GENERAL*********/
@@ -125,7 +129,7 @@ aside {
 
 .navbar-default .nav > li.active>a,
 .navbar-default .nav>li.active>a:focus {
-    color: #14c269!important;
+    color: #14c269;
     background-color: transparent;
 }
 
@@ -137,6 +141,15 @@ aside {
 #donate-nav {
     color: #14c269;
     font-weight: 700;
+    letter-spacing: 0.05em;
+    font-size: 20px;
+}
+
+#donate-nav:hover {
+    background-color: #14c269;
+    color: #fff;
+    border-radius: 10px;
+    text-decoration: none;
 }
 
 #branding {
@@ -149,6 +162,23 @@ aside {
     margin-top: 4px; 
     margin-left: 5px;
 }
+
+.navbar-default .navbar-nav>.open>a, 
+.navbar-default .navbar-nav>.open>a:focus, 
+.navbar-default .navbar-nav>.open>a:hover{
+    background-color: transparent;
+}
+ 
+.dropdown-menu>li>a {
+    font-size: 18px;
+}
+    
+.dropdown-menu>li>a:hover {
+    background-color: #f7f7f7;
+    color: #14c269;
+    font-weight: 300;
+}
+
 
 /**** MEDIA NAV MIN *****/
 @media(min-width:768px) {
@@ -320,10 +350,251 @@ header .header-content .header-content-inner p {
     background-color: #14c269;
     color: #fff;
     border-radius: 2px;
+    text-decoration: none;
 }
 
 /****** END MEDIA HEADER ******/
 /****** END HEADER ************/
+
+/****** REST THEME CSS (CREATIVE)****/
+
+.section-heading {
+    font-size: 50px;
+    margin-top: 0;
+}
+
+.service-box {
+    margin: 50px auto 0;
+    max-width: 400px;
+}
+
+@media(min-width:992px) {
+    .service-box {
+        margin: 20px auto 0;
+    }
+}
+
+.service-box p {
+    margin-bottom: 0;
+}
+
+.portfolio-box {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    max-width: 650px;
+}
+
+.portfolio-box .portfolio-box-caption {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    background: rgba(240,95,64,.9);
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    padding: 0 15px;
+    font-family: 'Open Sans','Helvetica Neue',Arial,sans-serif;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+    font-size: 18px;
+}
+
+.portfolio-box:hover .portfolio-box-caption {
+    opacity: 1;
+}
+
+@media(min-width:768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+    }
+
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 22px;
+    }
+}
+
+.call-to-action h2 {
+    margin: 0 auto 20px;
+}
+
+.text-primary {
+    color: #14c269;
+}
+
+.no-gutter > [class*=col-] {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.btn-default {
+    border-color: #fff;
+    color: #222;
+    background-color: #fff;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-default:hover,
+.btn-default:focus,
+.btn-default.focus,
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    border-color: #ededed;
+    color: #222;
+    background-color: #f2f2f2;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    background-image: none;
+}
+
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled.focus,
+.btn-default[disabled].focus,
+fieldset[disabled] .btn-default.focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+    border-color: #fff;
+    background-color: #fff;
+}
+
+.btn-default .badge {
+    color: #fff;
+    background-color: #222;
+}
+
+.btn-primary {
+    border-color: #14c269;
+    color: #fff;
+    background-color: #14c269;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+}
+
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary.focus,
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    border-color: #14c269;
+    color: #fff;
+    background-color: #14c269;
+}
+
+.btn-primary:active,
+.btn-primary.active,
+.open > .dropdown-toggle.btn-primary {
+    background-image: none;
+}
+
+.btn-primary.disabled,
+.btn-primary[disabled],
+fieldset[disabled] .btn-primary,
+.btn-primary.disabled:hover,
+.btn-primary[disabled]:hover,
+fieldset[disabled] .btn-primary:hover,
+.btn-primary.disabled:focus,
+.btn-primary[disabled]:focus,
+fieldset[disabled] .btn-primary:focus,
+.btn-primary.disabled.focus,
+.btn-primary[disabled].focus,
+fieldset[disabled] .btn-primary.focus,
+.btn-primary.disabled:active,
+.btn-primary[disabled]:active,
+fieldset[disabled] .btn-primary:active,
+.btn-primary.disabled.active,
+.btn-primary[disabled].active,
+fieldset[disabled] .btn-primary.active {
+    border-color: #14c269;
+    background-color: #14c269;
+}
+
+.btn-primary .badge {
+    color: #14c269;
+    background-color: #fff;
+}
+
+.btn {
+    border: 0;
+    border-radius: 300px;
+    text-transform: uppercase;
+    font-family: 'Raleway','Open Sans','Helvetica Neue',Arial,sans-serif;
+    font-weight: 700;
+}
+
+.btn-xl {
+    padding: 15px 30px;
+}
+
+::-moz-selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+::selection {
+    text-shadow: none;
+    color: #fff;
+    background: #222;
+}
+
+img::selection {
+    color: #fff;
+    background: 0 0;
+}
+
+img::-moz-selection {
+    color: #fff;
+    background: 0 0;
+}
+
+body {
+    webkit-tap-highlight-color: #222;
+}
+/********END THEME CSS ************/
 
 /******** THE PROBLEM ********/
 
@@ -346,23 +617,121 @@ header .header-content .header-content-inner p {
     padding-top: 20px;
 }
 
+.pad-sides {
+    margin-left: 20px;
+    margin-right: 20px;
+}
 
-/**** PROBLEM CAROUSEL *****/
-#problemCarousel {
-    display: table;
-    margin: 0 auto;
+/***** END PROBLEM **********/
+
+/*****WHAT WE DO*****/
+
+.heading-banner {
+    background-color: #14c269;
+}
+
+.section-heading.whatwedo {
+    font-weight: 800;
+    font-size: 65px;
+    word-spacing: 0.2em;
+    color: #fff;
+    padding: 10px 0;
+}
+    
+.container.custom {
+    width: 100%;
+    overflow: hidden;
+}
+
+.container.custom-900 {
+    max-width: 900px;
     overflow: auto;
 }
 
-.carousel-inner {
-    margin-bottom: 50px;
+.container.custom-960 {
+    max-width: 960px;
+    overflow: auto;
 }
 
-.carousel-indicators.the-problem {
-    font-size: 0.1em;
+.container.custom-1200 {
+    max-width: 1200px;
+    overflow: auto;
+}
+
+#whatWeDo-tagline {
+    font-size: 35px;
+    font-weight: 500;
+    padding-top: 25px;
+    padding-bottom: 35px;
+    line-height: 140%;
+}
+
+.weAreMore {
+    font-weight: 400;
+    line-height: 150%;
+}
+
+/****** WHAT WE DO CAROUSEL *****/
+
+a.carousel-link {
+    color: #000;
+    -webkit-transition: all .35s;
+    -moz-transition: all .35s;
+    transition: all .35s;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+a.carousel-link:hover,
+a.carousel-link:focus,
+a.carousel-link:visited{
+    color: #fff;
+    font-weight: 600;
+}
+
+#whatWeDoCarouselButtons {
+    max-width: 1200px;
+    display: block;
+    margin: 0 auto;
+}
+
+.nav.tab-style > li > a:hover,
+.nav.tab-style > li > a:focus,
+.nav.tab-style > li.active > a{
+    background-color: #14c269;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #fff;
+    font-weight: 600;
+}
+
+.nav.tab-style > li > a{
+    background-color: #e7e7e7;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    color: #a2a2a2;
+}
+
+span.tab-spacer {
+    width: 1000px !important;
+}
+    
+#whatWeDoCarousel {
+    display: table;
+    margin: 0 auto;
+    overflow: auto;
+    
+    max-width: 1200px;
+}
+
+.carousel-inner {
+    margin-bottom: 70px;
+}
+
+.carousel-indicators.whatWeDo {
+    font-size: 0.2em;
     letter-spacing: 3em;
     border-color: #000;
-    visibility: hidden;
 }
 
 .carousel-indicators li {
@@ -374,9 +743,9 @@ header .header-content .header-content-inner p {
     border-color: #14c269;
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left.whatWeDo, .carousel-control.right.whatWeDo{
 	background: none;
-	color: @red;
+	color: grey;
 	border: none;
     
     position: absolute; /* already here */
@@ -384,38 +753,210 @@ header .header-content .header-content-inner p {
 }
 
 .carousel-control.left {
-    margin-left: -15%;
-    color: grey;
+    margin-left: -14%;
 }
+
 .carousel-control.right {
-    margin-right: -15%; 
-    color: grey;
+    margin-right: -10%;
+}
+
+span.glyphicon.custom {
+    font-size: 4em;
+    margin-bottom: 40px !important;
 }
 
 span.glyphicon.custom:hover {
     color: #14c269;
 }
+/**** END CAROUSEL ****/
 
-.scaled-problem-carousel {
-    height: 200px;
+.map-container {
+    overflow: hidden;
 }
 
-/**** END PROBLEM CAROUSEL *****/
-
-
-.pad-sides {
-    margin-left: 20px;
-    margin-right: 20px;
+.whereAreWeText {
+    padding-left: 25px;
+    padding-right: 30px;
+    line-height: 500%;
+    height: 500px;
 }
 
-/***** END PROBLEM **********/
+#whereAreWe {
+    font-size:40px;
+}
 
 
+/**** FEATURED IN *****/
+
+
+#featuredInRow {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    
+    overflow: auto;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+
+#NPR, #YaleNews, #Forbes, #IndiaWest, #CoDesign {
+    width: 200px;
+    height: 100px;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+h2.featuredIn {
+    color: #a7a7a7;
+    font-weight: 200;
+    font-size: 30px;
+    word-spacing: 0.2em;
+}
+
+#IndiaWest {
+    background-image: url("../img/featuredIn/IndiaWest_greyscale.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+#NPR {
+    background-image: url("../img/featuredIn/npr_logo_greyscale.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+#Forbes {
+    background-image: url("../img/featuredIn/forbes-grey.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+#YaleNews {
+    background-image: url("../img/featuredIn/yale-news-grey.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;    
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+
+#CoDesign {
+    background-image: url("../img/featuredIn/coDesign-grey-sized.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;    
+    transition: 2s;
+    -moz-transition: 2s;
+    -webkit-transition: 2s;
+}
+    
+
+#IndiaWest:hover {
+    background-image: url("../img/featuredIn/IndiaWest_color.png");
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#NPR:hover {
+    background-image: url("../img/featuredIn/npr_logo_rgb.jpg");
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#Forbes:hover {
+    background-image: url("../img/featuredIn/forbes-color.png");
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#YaleNews:hover {
+    background-image: url("../img/featuredIn/yale-news-color.png");
+    transition: 0.5s;
+    -moz-transition: 0.5s;
+    -webkit-transition: 0.5s;
+}
+
+#CoDesign:hover {
+    background-image: url("../img/featuredIn/coDesign-sized.jpg");
+    transition: 1s;
+    -moz-transition: 1s;
+    -webkit-transition: 1s;
+}
+    
+
+.press-link {
+    color: #14c269;
+}
+
+.press-link:hover,
+.press-link:focus,
+.press-link:visited {
+    color: #a7a7a7;
+    text-decoration: none;
+}
 
 /*********** RANDOM CUSTOM ********/
 .custom-pad {
     padding-top: 20px;
 }
+
+.top-padding-5 {
+    padding-top: 10px;
+}
+
+.top-padding-10 {
+    padding-top: 10px;
+}
+
+.top-padding-20 {
+    padding-top: 20px;
+}
+
+.top-padding-30 {
+    padding-top: 30px;
+}
+
+.top-padding-40 {
+    padding-top: 40px;
+}
+
+.top-padding-50 {
+    padding-top: 50px;
+}
+
+
+
 
 .larger-bolder-text {
     font-size: 25px;
@@ -436,4 +977,69 @@ br.text-break {
 
 .color-faded {
     background-color: #efefef;
+}
+
+.text-color-faded {
+    color: #a7a7a7;
+}
+
+#color-stripe {
+    margin-bottom: 0;
+}
+
+.stripe {
+    height: 1px;
+}
+
+.dark {
+    background-color: #a7a7a7;
+}
+
+.small-link {
+    font-size: 12px;
+}
+    
+a.div-link {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    text-decoration: none;
+    /* Makes sure the link doesn't get underlined */
+    z-index: 10;
+    /* raises anchor tag above everything else in div */
+    background-color: white;
+    /*workaround to make clickable in IE */
+    opacity: 0;
+    /*workaround to make clickable in IE */
+    filter: alpha(opacity=0);
+    /*workaround to make clickable in IE */
+}
+
+.overflow-auto {
+    overflow: auto;
+}
+
+.max-width-100pc {
+    max-width: 100%;
+}
+
+.line-space-double {
+    line-height: 200%;
+}
+
+.vertical-align {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+a.white {
+    color: #fff;
+    text-decoration: underline;
+}
+
+a.white:hover,
+a.white:focus{
+    color: #000;
 }

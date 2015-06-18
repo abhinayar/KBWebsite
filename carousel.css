@@ -1,8 +1,4 @@
-.container.sized {
-    max-width: 960px;
-}
-
-#myCarousel {
+#whatWeDoCarousel {
     display: table;
     margin: 0 auto;
     overflow: auto;
@@ -12,7 +8,7 @@
     margin-bottom: 50px;
 }
 
-.carousel-indicators.the-problem {
+.carousel-indicators.whatWeDo {
     font-size: 0.1em;
     letter-spacing: 3em;
     border-color: #000;
@@ -27,9 +23,9 @@
     border-color: #14c269;
 }
 
-.carousel-control.left, .carousel-control.right {
+.carousel-control.left.whatWeDo, .carousel-control.right.whatWeDo{
 	background: none;
-	color: @red;
+	color: grey;
 	border: none;
     
     position: absolute; /* already here */
@@ -37,12 +33,11 @@
 }
 
 .carousel-control.left {
-    margin-left: -15%;
-    color: grey;
+    margin-left: -5%;
 }
+
 .carousel-control.right {
-    margin-right: -12%; 
-    color: grey;
+    margin-right: -2%;
 }
 
 span.glyphicon.custom {
