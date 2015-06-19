@@ -1,11 +1,5 @@
-make it look more like a necklace- parabola
+Please Note: index2.html is current website homepage, needs renaming.
 
-links to each what we do area ABOVE
+New KB Website.
 
-Work on what we do MAIN wording
-
-
-<a class="page-scroll" href="#whatwedo">What We Do</a>
-
-
-THERE ARE 110 Camps
+By Abhi Nayar with Ty Petrochko
